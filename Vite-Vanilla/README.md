@@ -1,17 +1,3 @@
-# Template
-- This is template for **VANILLA JS** projects you can add here missing technologies that you want
-
----
-
-### Setup:
-- Vite
-- JavaScript
-- SASS
-- Eslint
-- Prettier
-
----
-
 ### Getting Started
 
 ```bash
