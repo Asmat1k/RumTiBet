@@ -32,6 +32,8 @@
 ## Материалы для изучения
 
 - [Roadmap Frontend developer](https://roadmap.sh/frontend?r=frontend) - дорожная карта с темами необходимыми для изучения (настоятельно рекомендуется к изучению)
+- [Инструкция по верстке сайта по макету](https://verstaem.online/blog/kak-sverstat-sajt-po-maketu/)
+- [Инструкция по работе с Figma](https://htmlacademy.ru/blog/soft/figma)
 - [Краткое руководство по работе с GIT](https://www.youtube.com/watch?v=zZBiln_2FhM)
 - [Игра по GIT](https://learngitbranching.js.org/?locale=ru_RU)
 - [Курс основы HTML](https://www.youtube.com/watch?v=_J6hMLsscOo&list=PLNkWIWHIRwMFKmmIPVaCPpusgloMMgxN2)
