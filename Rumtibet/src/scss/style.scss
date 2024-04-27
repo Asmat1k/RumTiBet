@@ -2,7 +2,7 @@
 
 //<ПЕРЕМЕННЫЕ>
 // Шрифт
-$fontFamily: "Nunito Sans", sans-serif;
+$fontFamily: 'Nunito Sans', sans-serif;
 // Шрифт
 $fontSize: 18;
 // Цвет главного шрифта
@@ -27,7 +27,8 @@ $maxWidth: 1180;
 //</Подключаем шрифты>
 
 //<ПОДЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>
-// @import "filename";
+@import 'header.scss';
+@import 'welcome.scss';
 //</ПОДЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>
 
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>

@@ -1,12 +1,13 @@
 <!doctype html>
 <html lang="ru">
-  @@include('html/head.html', { "title":"Главная" })
+  @@include('html/head.html', { "title":"РУМТИБЕТ" })
   <body>
-    <div class="wrapper">
-      @@include('html/header.html',{})
-      <main class="page">hello</main>
-      @@include('html/footer.html',{})
-    </div>
+    <main class="main">
+      <section class="main__welcome">
+        @@include('html/header.html',{}) @@include('html/welcome.html',{})
+      </section>
+    </main>
+    @@include('html/footer.html',{})
     <script src="js/app.min.js"></script>
   </body>
 </html>

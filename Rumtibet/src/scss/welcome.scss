@@ -1,0 +1,15 @@
+.main__welcome {
+  height: 110vh;
+  width: 100vw;
+  background: url('../img/welcome.png') no-repeat center center / cover;
+
+  padding: 15px;
+  padding-bottom: 0;
+}
+
+@media (max-width: 1045px) {
+  .main__welcome {
+    padding: 20px 15px;
+    padding-bottom: 0;
+  }
+}
