@@ -22,10 +22,10 @@ body {
   min-width: $minWidth + px;
 }
 body {
-  color: $mainColor;
-  line-height: 1;
+  color: $fontColorOne;
+  line-height: $fontSize;
   font-family: $fontFamily;
-  font-size: $fontSize;
+  font-size: $fontSize + px;
 }
 input,
 button,
