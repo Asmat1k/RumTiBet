@@ -1,15 +1,145 @@
-.main__welcome {
-  height: 110vh;
-  width: 100vw;
-  background: url('../img/welcome.png') no-repeat center center / cover;
+.welcome {
+  padding-top: 465px;
+  .welcome__container {
+    .welcome__block {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      //!TODO Пока без шрифта
+      .welcome__title {
+        font-size: 50px;
+        letter-spacing: 1px;
+        line-height: 150%;
+        font-weight: bold;
 
-  padding: 15px;
-  padding-bottom: 0;
+        text-align: left;
+      }
+      .welcome__form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        background-color: hsla(0, 0%, 100%, 0.2);
+        border-radius: 10px;
+        padding: 40px 43px;
+        .welcome__form-item {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          gap: 10px;
+
+          position: relative;
+          font-size: 16px;
+          .form__input {
+            padding: 15px;
+            border: 1px solid $fontColorTwo;
+            border-radius: 10px;
+            background-color: transparent;
+
+            font-weight: bold;
+            color: $fontColorTwo;
+
+            max-height: 52px;
+            min-width: 270px;
+            &[type='text']:focus {
+              ~ .form__arrow {
+                transform: rotate(270deg);
+              }
+            }
+            &::placeholder {
+              font-weight: bold;
+              color: $fontColorTwo;
+            }
+          }
+          .form__arrow {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 4px;
+
+            position: absolute;
+            top: 20px;
+            right: 20px;
+
+            transform: rotate(90deg);
+            transition: 0.5s;
+            span {
+              border-radius: 3px;
+              background-color: $fontColorTwo;
+
+              width: 10px;
+              height: 2px;
+              &:first-child {
+                transform: rotate(45deg);
+              }
+              &:last-child {
+                transform: rotate(-45deg);
+              }
+            }
+          }
+          .form__label {
+            font-size: 14px;
+            color: white;
+            text-transform: lowercase;
+
+            padding: 0 8px;
+          }
+          .form__btn {
+            background-color: $fontColorTwo;
+            color: $fontColorOne;
+            font-weight: bold;
+            border-radius: 5px;
+            padding: 15px 36px;
+          }
+        }
+        &:last-child {
+          align-items: start;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1167px) {
+  .welcome {
+    .welcome__container {
+      .welcome__block {
+        .welcome__form {
+          .welcome__form-item:last-child {
+            align-self: center;
+            justify-self: center;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1045px) {
-  .main__welcome {
-    padding: 20px 15px;
-    padding-bottom: 0;
+  .welcome {
+    padding-top: 235px;
+    .welcome__container {
+      .welcome__block {
+        gap: 30px;
+        .welcome__title {
+          font-size: 28px;
+        }
+        .welcome__form {
+          background-color: transparent;
+          padding: 0;
+          .welcome__form-item:not(:last-child) {
+            display: none;
+          }
+          .welcome__form-item:last-child {
+            align-self: normal;
+            justify-self: normal;
+            width: auto;
+          }
+        }
+      }
+    }
   }
 }
