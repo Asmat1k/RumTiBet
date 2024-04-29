@@ -74,7 +74,6 @@
           opacity: 0;
           background-color: $backgroundColor;
           width: 290px;
-          height: 100vh;
 
           transition: 0.5s;
           .header-nav {
@@ -126,6 +125,7 @@
           }
         }
         .active {
+          height: 120vh;
           top: -20px;
           opacity: 1;
         }

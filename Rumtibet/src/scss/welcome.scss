@@ -144,3 +144,16 @@
     }
   }
 }
+
+@media (max-width: 380px) {
+  .welcome {
+    .welcome__container {
+      .welcome__block {
+        .welcome__title {
+          font-size: 20px;
+          line-height: 150%;
+        }
+      }
+    }
+  }
+}
