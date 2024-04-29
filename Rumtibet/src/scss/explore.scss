@@ -1,0 +1,119 @@
+.explore {
+  .explore__container {
+    margin: 100px 0;
+    .explore__body {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+
+      height: 525px;
+      .explore__imgs {
+        position: relative;
+        width: 480px;
+        .explore__img-wrapper:last-child {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          .explore__img:last-child {
+            position: relative;
+            .explore__play {
+              position: absolute;
+              top: calc(50% - 25px);
+              right: calc(50% - 25px);
+
+              cursor: pointer;
+              transition: 0.3s;
+              &:hover {
+                transform: scale(1.1);
+              }
+              &:active {
+                transform: scale(0.95);
+              }
+            }
+          }
+        }
+      }
+      .explore__info {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px;
+
+        max-width: 580px;
+        .explore__header {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          .explore__subtitle {
+            text-transform: lowercase;
+            font-size: 24px;
+            color: $labelColor;
+          }
+          .explore__title {
+            font-size: 32px;
+            line-height: 120%;
+            font-weight: bolder;
+          }
+        }
+        .explore__text {
+          line-height: 150%;
+        }
+        .explore__btn {
+          display: flex;
+          justify-content: start;
+
+          color: $fontColorTwo;
+          background-color: $backgroundColor;
+          border-radius: 5px;
+          font-size: 16px;
+
+          padding: 16px 34px;
+          max-height: 52px;
+          max-width: 200px;
+
+          transition: 0.2s;
+          &:hover {
+            background-color: $fontColorTwo;
+            color: $backgroundColor;
+            border: 1px solid $backgroundColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1105px) {
+  .explore {
+    .explore__container {
+      .explore__body {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+
+        height: 100%;
+        .explore__imgs {
+          width: 100%;
+          .explore__img-wrapper:first-child {
+            display: none;
+          }
+          .explore__img-wrapper:last-child {
+            position: static;
+            .explore__img {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+        .explore__info {
+          .explore__btn {
+            align-self: center;
+          }
+        }
+      }
+    }
+  }
+}

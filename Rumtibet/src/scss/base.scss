@@ -1,29 +1,41 @@
 // Общие стили
 html {
   scroll-behavior: smooth;
-  background-color: black;
+  background-color: white;
 }
 .lock {
   overflow: hidden;
   touch-action: none;
 }
+.main {
+  background-color: $fontColorTwo;
+}
 .main__welcome {
   color: $fontColorTwo;
 
-  height: 110vh;
+  min-height: 103vh;
   width: 100vw;
   background: url('../img/welcome.png') no-repeat center center / cover;
 
   padding: 15px;
-  padding-bottom: 0;
+}
+.main__block {
+  padding: 0 15px;
 }
 .main__section {
   max-width: $maxWidth + px;
   margin: 0 auto;
 }
-@media (max-width: 1045px) {
+
+@media (max-width: 1167px) {
   .main__welcome {
     padding: 20px 15px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 1045px) {
+  .main__welcome {
     padding-bottom: 0;
   }
 }
