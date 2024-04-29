@@ -13,7 +13,7 @@ html {
 .main__welcome {
   color: $fontColorTwo;
 
-  min-height: 103vh;
+  height: 103vh;
   width: 100vw;
   background: url('../img/welcome.png') no-repeat center center / cover;
 
@@ -36,6 +36,13 @@ html {
 
 @media (max-width: 1045px) {
   .main__welcome {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 390px) {
+  .main__welcome {
+    max-height: 600px;
     padding-bottom: 0;
   }
 }
