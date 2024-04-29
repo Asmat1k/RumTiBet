@@ -1,6 +1,6 @@
 .explore {
   .explore__container {
-    margin: 100px 0;
+    margin-top: 20px;
     .explore__body {
       display: flex;
       justify-content: space-between;
@@ -84,7 +84,7 @@
   }
 }
 
-@media (max-width: 1105px) {
+@media (max-width: 1110px) {
   .explore {
     .explore__container {
       .explore__body {

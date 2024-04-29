@@ -1,0 +1,195 @@
+.programms {
+  .programms__container {
+    .programms__body {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+
+      height: 590px;
+      .programms__info {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 40px;
+
+        text-align: left;
+
+        max-width: 585px;
+        margin-top: 5px;
+        .programms__header {
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          gap: 8px;
+          .programms__subtitle {
+            text-transform: lowercase;
+            font-size: 24px;
+            color: $labelColor;
+          }
+          .programms__title {
+            font-size: 32px;
+            line-height: 120%;
+            font-weight: bolder;
+          }
+        }
+        .programms__text {
+          font-size: 18px;
+          font-weight: normal;
+          line-height: 150%;
+        }
+        .programms__list {
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+
+          .programms__item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+
+            min-height: 64px;
+            .programms__item-icon {
+              img {
+                width: 50px;
+              }
+            }
+            .programms__item-info {
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              .programms__item-title {
+                font-size: 18px;
+                font-weight: bold;
+              }
+              .programms__item-text {
+                font-size: 14px;
+                line-height: 130%;
+              }
+            }
+          }
+        }
+        .programms__btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          color: $fontColorTwo;
+          background-color: $backgroundColor;
+          border-radius: 5px;
+          font-size: 16px;
+
+          padding: 16px 36px;
+          max-height: 52px;
+          width: 236px;
+
+          transition: 0.2s;
+          &:hover {
+            background-color: $fontColorTwo;
+            color: $backgroundColor;
+            border: 1px solid $backgroundColor;
+          }
+        }
+      }
+      .programms__imgs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        width: 510px;
+        img {
+          max-width: 250px;
+          max-height: 250px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1110px) {
+  .programms {
+    .programms__container {
+      .programms__body {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+
+        height: 590px;
+        .programms__info {
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 545px) {
+  .programms {
+    .programms__container {
+      .programms__body {
+        .programms__imgs {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .programms {
+    .programms__container {
+      .programms__body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+
+        height: 590px;
+        .programms__info {
+          align-items: start;
+          gap: 32px;
+          .programms__header {
+            align-items: start;
+            .programms__subtitle {
+              font-size: 16px;
+            }
+            .programms__title {
+              font-size: 24px;
+            }
+          }
+          .programms__text {
+            font-size: 16px;
+          }
+          .programms__list {
+            gap: 32px;
+            .programms__item {
+              min-height: 105px;
+              .programms__item-icon {
+                align-self: start;
+                img {
+                  width: 50px;
+                }
+              }
+              .programms__item-info {
+                gap: 5px;
+              }
+            }
+          }
+          .programms__btn {
+            align-self: center;
+
+            font-size: 16px;
+
+            padding: 12px 24px;
+            max-height: 44px;
+            width: 212px;
+          }
+        }
+      }
+    }
+  }
+}

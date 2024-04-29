@@ -3,12 +3,12 @@
   @@include('html/head.html', { "title":"РУМТИБЕТ" })
   <body>
     <main class="main">
-      <div class="main__welcome">
-        <div class="main__section">@@include('html/header.html',{}) @@include('html/welcome.html',{})</div>
+      <div class="main__welcome-wrapper">
+        <div class="main__welocme-body">
+          @@include('html/header.html',{}) @@include('html/welcome.html',{})
+        </div>
       </div>
-      <div class="main__block">
-        <div class="main__section">@@include('html/explore.html',{})</div>
-      </div>
+      <div class="main__block">@@include('html/explore.html',{}) @@include('html/programms.html',{})</div>
     </main>
     @@include('html/footer.html',{})
     <script src="js/app.min.js"></script>

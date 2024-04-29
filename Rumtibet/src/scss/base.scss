@@ -10,7 +10,8 @@ html {
 .main {
   background-color: $fontColorTwo;
 }
-.main__welcome {
+// start welocme section
+.main__welcome-wrapper {
   color: $fontColorTwo;
 
   height: 103vh;
@@ -19,12 +20,18 @@ html {
 
   padding: 15px;
 }
+.main__welocme-body {
+  max-width: $maxWidth + px;
+  margin: 0 auto;
+}
+// end welcome section
 .main__block {
   padding: 0 15px;
 }
 .main__section {
   max-width: $maxWidth + px;
   margin: 0 auto;
+  padding: 80px 0 100px 0;
 }
 
 @media (max-width: 1167px) {
