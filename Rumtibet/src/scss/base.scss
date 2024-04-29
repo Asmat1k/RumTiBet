@@ -35,21 +35,23 @@ html {
 }
 
 @media (max-width: 1167px) {
-  .main__welcome {
+  .main__welcome-wrapper {
     padding: 20px 15px;
     padding-bottom: 80px;
   }
 }
 
 @media (max-width: 1045px) {
-  .main__welcome {
+  .main__welcome-wrapper {
     padding-bottom: 0;
+  }
+  .main__section {
+    padding: 50px 0;
   }
 }
 
 @media (max-width: 390px) {
-  .main__welcome {
+  .main__welcome-wrapper {
     max-height: 600px;
-    padding-bottom: 0;
   }
 }

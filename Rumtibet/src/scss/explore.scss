@@ -61,7 +61,8 @@
         }
         .explore__btn {
           display: flex;
-          justify-content: start;
+          align-items: center;
+          justify-content: center;
 
           color: $fontColorTwo;
           background-color: $backgroundColor;
@@ -70,7 +71,7 @@
 
           padding: 16px 34px;
           max-height: 52px;
-          max-width: 200px;
+          width: 200px;
 
           transition: 0.2s;
           &:hover {
@@ -124,7 +125,7 @@
 @media (max-width: 390px) {
   .explore {
     .explore__container {
-      margin: 55px 0;
+      margin-top: 5px;
       .explore__body {
         .explore__info {
           gap: 24px;
