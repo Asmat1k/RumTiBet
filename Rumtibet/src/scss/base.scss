@@ -14,10 +14,11 @@ html {
 .main__welcome-wrapper {
   color: $fontColorTwo;
 
-  height: 103vh;
+  height: 100%;
   background: url('../img/welcome.png') no-repeat center center / cover;
 
   padding: 15px;
+  padding-bottom: 85px;
 }
 .main__welocme-body {
   max-width: $maxWidth + px;
@@ -36,8 +37,8 @@ html {
 
 @media (max-width: 1167px) {
   .main__welcome-wrapper {
+    height: 100vh;
     padding: 20px 15px;
-    padding-bottom: 80px;
   }
 }
 
@@ -46,7 +47,6 @@ html {
     padding-bottom: 0;
   }
   .main__section {
-    //? можно округлить
     padding: 53px 0;
   }
 }

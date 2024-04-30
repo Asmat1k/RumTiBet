@@ -12,6 +12,7 @@
   max-height: 44px;
   width: 160px;
 
+  cursor: pointer;
   transition: 0.2s;
   &:hover {
     background-color: $fontColorTwo;
@@ -34,6 +35,7 @@
   max-height: 52px;
   width: 180px;
 
+  cursor: pointer;
   transition: 0.2s;
   &:hover {
     background-color: $fontColorTwo;
