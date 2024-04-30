@@ -45,4 +45,6 @@ $maxWidth: 1180;
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ - ФОРМ И ГОТОВЫХ КЛАССОВ>
 @import 'base';
+@import './base/button.scss';
+@import './base/heading.scss';
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ - ФОРМ И ГОТОВЫХ КЛАССОВ>

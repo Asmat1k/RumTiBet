@@ -28,24 +28,8 @@
             }
           }
         }
-        .header__button {
-          display: flex;
-          align-items: center;
-
-          background-color: $backgroundColor;
-          border-radius: 5px;
-          font-size: 16px;
-
-          padding: 12px 24px;
-          height: 44px;
+        .header__btn {
           width: 155px;
-
-          transition: 0.2s;
-          &:hover {
-            background-color: $fontColorTwo;
-            color: $backgroundColor;
-            border: 1px solid $backgroundColor;
-          }
         }
       }
       .header__menu-burger {
@@ -120,7 +104,7 @@
               }
             }
           }
-          .header__button {
+          .header__btn {
             display: none;
           }
         }
