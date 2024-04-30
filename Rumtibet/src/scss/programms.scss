@@ -111,13 +111,11 @@
   .programms {
     .programms__container {
       .programms__body {
-        display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        gap: 40px;
 
-        height: 590px;
+        height: 100%;
         .programms__info {
           align-items: center;
         }
