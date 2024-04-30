@@ -9,16 +9,6 @@
         flex-direction: column;
         align-items: center;
         gap: 10px;
-        .popular__subtitle {
-          text-transform: lowercase;
-          font-size: 24px;
-          color: $labelColor;
-        }
-        .popular__title {
-          font-size: 32px;
-          line-height: 120%;
-          font-weight: bolder;
-        }
       }
       .popular__cards {
         display: flex;
@@ -45,8 +35,8 @@
             position: absolute;
             top: 50px;
             right: 0;
-            opacity: 1;
 
+            opacity: 1;
             background-color: hsla(0, 0%, 99%, 0.4);
             border-radius: 5px;
             padding: 5px 10px;
@@ -129,6 +119,7 @@
       }
       .popular__btn {
         align-self: center;
+
         width: 245px;
       }
     }
@@ -143,7 +134,6 @@
         gap: 20px;
 
         top: 335px;
-
         .card__header {
           .card__header-text {
             .card__title {

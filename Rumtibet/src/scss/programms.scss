@@ -22,16 +22,6 @@
           align-items: start;
           flex-direction: column;
           gap: 8px;
-          .programms__subtitle {
-            text-transform: lowercase;
-            font-size: 24px;
-            color: $labelColor;
-          }
-          .programms__title {
-            font-size: 32px;
-            line-height: 120%;
-            font-weight: bolder;
-          }
         }
         .programms__text {
           font-size: 18px;
@@ -89,7 +79,7 @@
   }
 }
 
-@media (max-width: 1110px) {
+@media (max-width: 1150px) {
   .programms {
     .programms__container {
       .programms__body {
@@ -101,15 +91,6 @@
         .programms__info {
           align-items: center;
         }
-      }
-    }
-  }
-}
-
-@media (max-width: 545px) {
-  .programms {
-    .programms__container {
-      .programms__body {
         .programms__imgs {
           display: none;
         }
@@ -132,12 +113,6 @@
           gap: 32px;
           .programms__header {
             align-items: start;
-            .programms__subtitle {
-              font-size: 16px;
-            }
-            .programms__title {
-              font-size: 24px;
-            }
           }
           .programms__text {
             font-size: 16px;
@@ -159,6 +134,7 @@
           }
           .programms__btn {
             align-self: center;
+
             width: 212px;
           }
         }
