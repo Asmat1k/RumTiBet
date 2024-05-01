@@ -17,9 +17,7 @@
       }
       .welcome__form {
         display: flex;
-        align-items: center;
         justify-content: space-between;
-        flex-wrap: wrap;
         gap: 10px;
 
         background-color: hsla(0, 0%, 100%, 0.2);
@@ -113,15 +111,45 @@
           font-size: 28px;
         }
         .welcome__form {
+          flex-wrap: wrap;
+          padding: 20px;
+          .welcome__form-item {
+            flex: 1 1 48%;
+            .form__btn {
+              min-width: 210px;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .welcome {
+    padding-top: 235px;
+    .welcome__container {
+      .welcome__block {
+        gap: 30px;
+        .welcome__title {
+          font-size: 28px;
+        }
+        .welcome__form {
           background-color: transparent;
           padding: 0;
-          .welcome__form-item:not(:last-child) {
-            display: none;
-          }
-          .welcome__form-item:last-child {
-            align-self: normal;
-            justify-self: normal;
-            width: auto;
+          .welcome__form-item {
+            .form__btn {
+              width: 215px;
+            }
+            &:not(:last-child) {
+              display: none;
+            }
+            &:last-child {
+              align-self: normal;
+              justify-self: normal;
+              width: auto;
+            }
           }
         }
       }

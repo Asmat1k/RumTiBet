@@ -83,14 +83,33 @@
   .programms {
     .programms__container {
       .programms__body {
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
+        flex-wrap: nowrap;
 
         height: 100%;
         .programms__info {
-          align-items: center;
+          align-items: start;
         }
+        .programms__imgs {
+          flex-wrap: nowrap;
+          align-items: center;
+          flex-direction: column;
+
+          img {
+            max-width: 150px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 820px) {
+  .programms {
+    .programms__container {
+      .programms__body {
+        align-items: center;
+        justify-content: center;
+
         .programms__imgs {
           display: none;
         }

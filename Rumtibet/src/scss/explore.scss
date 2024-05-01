@@ -15,6 +15,11 @@
           position: absolute;
           bottom: 0;
           right: 0;
+          .explore__img {
+            height: auto;
+            max-width: 100%;
+            object-fit: cover;
+          }
           .explore__img:last-child {
             position: relative;
             .explore__play {
@@ -68,6 +73,7 @@
         gap: 40px;
 
         height: 100%;
+        width: 100%;
         .explore__imgs {
           width: 100%;
           .explore__img-wrapper:first-child {
@@ -86,6 +92,7 @@
           }
         }
         .explore__info {
+          width: 100%;
           .explore__btn {
             align-self: center;
           }
