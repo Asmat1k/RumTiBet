@@ -10,7 +10,8 @@ html {
 .main {
   background-color: $fontColorTwo;
 }
-// start welocme section
+
+// Главная секция
 .main__welcome-wrapper {
   color: $fontColorTwo;
 
@@ -24,9 +25,10 @@ html {
   max-width: $maxWidth + px;
   margin: 0 auto;
 }
-// end welcome section
+
+// Последующие секции
 .main__block {
-  padding: 0 15px;
+  padding: 0 0px;
 }
 .main__section {
   max-width: $maxWidth + px;
@@ -34,8 +36,14 @@ html {
   height: 100%;
   padding: 80px 0 100px 0;
 }
+.colored {
+  background-color: $sectionColor;
+}
 
 @media (max-width: 1167px) {
+  .main__block {
+    padding: 0 15px;
+  }
   .main__welcome-wrapper {
     height: 100vh;
     padding: 20px 15px;

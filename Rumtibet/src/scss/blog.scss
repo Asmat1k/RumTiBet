@@ -23,7 +23,7 @@
           gap: 25px;
 
           border-radius: 10px;
-          background-color: #f3f5f4;
+          background-color: $fontColorTwo;
           padding: 15px;
 
           overflow: hidden;
@@ -164,7 +164,9 @@
         .blog__btn {
           align-self: center;
 
+          padding: 12px 24px;
           width: 200px;
+          height: 44px;
           margin-top: 0;
         }
       }
