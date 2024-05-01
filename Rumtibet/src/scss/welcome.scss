@@ -103,23 +103,7 @@
   }
 }
 
-@media (max-width: 1167px) {
-  .welcome {
-    .welcome__container {
-      .welcome__block {
-        .welcome__form {
-          .welcome__form-item:last-child {
-            align-self: center;
-            justify-self: center;
-            width: 100%;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 1045px) {
+@media (max-width: 1165px) {
   .welcome {
     padding-top: 235px;
     .welcome__container {
