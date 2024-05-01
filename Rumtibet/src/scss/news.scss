@@ -1,0 +1,131 @@
+.news {
+  margin-top: -90px;
+  .news__container {
+    padding: 0;
+    .news__body {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+
+      position: relative;
+      bottom: -100px;
+
+      padding: 40px 100px;
+      background-color: $fontColorTwo;
+      border-radius: 5px;
+      box-shadow: 0px 0px 12px -5px rgba(0, 0, 0, 0.75);
+      .news__header {
+        display: flex;
+        align-items: start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 8px;
+
+        max-width: 380px;
+        .news__title {
+          font-size: 26px;
+        }
+        .news__subtitle {
+          font-size: 18px;
+        }
+      }
+      .news__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 8px;
+
+        max-width: 535px;
+        .news__form {
+          display: flex;
+          align-items: end;
+          justify-content: center;
+          gap: 10px;
+
+          .form__item {
+            display: flex;
+            flex-direction: column;
+
+            width: 280px;
+            .form__label {
+              font-size: 16px;
+              line-height: 20px;
+            }
+            .form__input {
+              background-color: $sectionColor;
+              border-radius: 5px;
+              padding: 12px;
+              &::placeholder {
+                font-weight: lighter;
+                font-size: 14px;
+                color: $fontColorOne;
+              }
+            }
+            .form__btn {
+              width: 240px;
+            }
+          }
+        }
+        .news__text {
+          font-size: 14px;
+          line-height: 18px;
+          .news__link {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1045px) {
+  .news {
+    margin: 0;
+    .news__container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      padding: 0 15px 50px 15px;
+      .news__body {
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 20px;
+
+        position: static;
+
+        padding: 25px;
+        height: 350px;
+        max-width: 360px;
+        .news__header {
+          max-width: 100%;
+          .news__title {
+            font-size: 24px;
+          }
+          .news__subtitle {
+            font-size: 16px;
+          }
+        }
+        .news__info {
+          align-items: normal;
+          gap: 25px;
+
+          width: 100%;
+          .news__form {
+            flex-direction: column;
+            gap: 15px;
+
+            .form__item {
+              width: 100%;
+              .form__label {
+                margin-bottom: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
