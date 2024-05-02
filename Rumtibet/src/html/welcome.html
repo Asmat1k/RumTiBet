@@ -4,13 +4,12 @@
       <h1 class="welcome__title">Насладись прогулкой в горы с командой единомышленников</h1>
       <form action="" class="welcome__form">
         <div class="welcome__form-item">
-          <input
-            type="text"
-            name="location"
-            id="location"
-            class="form__input"
-            placeholder="Локация для тура"
-          />
+          <select name="location" id="location" class="form__input">
+            <option selected="selected" value="0">Локация для тура</option>
+            <option value="Локация 1">Локация 1</option>
+            <option value="Локация 2">Локация 2</option>
+            <option value="Локация 3">Локация 3</option>
+          </select>
           <div class="form__arrow">
             <span></span>
             <span></span>
@@ -29,7 +28,12 @@
           <label for="date" class="form__label">укажите диапазон</label>
         </div>
         <div class="welcome__form-item">
-          <input type="text" name="members" id="member" class="form__input" placeholder="Участники" />
+          <select name="members" id="member" class="form__input">
+            <option selected="selected" value="0">Участники</option>
+            <option value="4">4 Участника</option>
+            <option value="6">6 Участинков</option>
+            <option value="8">8 Участинков</option>
+          </select>
           <div class="form__arrow">
             <span></span>
             <span></span>

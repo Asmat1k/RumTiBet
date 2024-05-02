@@ -81,6 +81,14 @@
 
                 color: $backgroundColor;
                 font-weight: bold;
+                &:hover {
+                  cursor: pointer;
+
+                  color: $backgroundColor;
+                  text-decoration: underline;
+
+                  transition: 0.1s;
+                }
               }
             }
           }
