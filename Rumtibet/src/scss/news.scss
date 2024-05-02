@@ -129,7 +129,7 @@
       align-items: center;
       justify-content: center;
 
-      padding: 0 15px 50px 15px;
+      padding: 0 0 50px 0;
       .news__body {
         flex-wrap: nowrap;
         flex-direction: column;
@@ -168,6 +168,9 @@
               width: 100%;
               .form__label {
                 margin-bottom: 5px;
+              }
+              .form__btn {
+                max-width: 240px;
               }
             }
           }

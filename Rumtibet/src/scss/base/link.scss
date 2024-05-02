@@ -1,0 +1,39 @@
+.main__link-item {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  .main__link-arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    span {
+      border-radius: 3px;
+      background-color: $fontColorTwo;
+
+      width: 10px;
+      height: 2px;
+      &:first-child {
+        transform: rotate(45deg);
+      }
+      &:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  .main__link-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  &:hover {
+    .main__link-arrow {
+      span {
+        background-color: $labelColor;
+      }
+    }
+    .main__link-text {
+      text-decoration: underline;
+      color: $labelColor;
+    }
+  }
+}
