@@ -1,7 +1,7 @@
 // Общие стили
 html {
   scroll-behavior: smooth;
-  background-color: white;
+  background-color: $fontColorTwo;
 }
 .lock {
   overflow: hidden;
@@ -21,7 +21,7 @@ html {
   padding: 15px;
   padding-bottom: 85px;
 }
-.main__welocme-body {
+.main__welcome-body {
   max-width: $maxWidth + px;
   margin: 0 auto;
 }

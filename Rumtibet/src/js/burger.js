@@ -12,7 +12,6 @@ export function toggleBurger() {
   // Для закрытия бургера после клика по ссылке
   LINKS.forEach((link) => {
     link.addEventListener('click', () => {
-      console.log('heh');
       BODY.classList.remove('lock');
       MENU.classList.remove('active');
       BURGER.classList.remove('burger-active');

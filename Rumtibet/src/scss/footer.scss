@@ -2,7 +2,7 @@
   background-color: $backgroundColor;
   color: $fontColorTwo;
   .footer__top {
-    padding: 180px 15px 90px 15px;
+    padding: 180px 15px 80px 15px;
     box-sizing: content-box;
     .footer__body {
       display: flex;
@@ -135,7 +135,6 @@
         align-items: center;
         .footer__item {
           max-width: 280px;
-          margin-top: 5px;
           &:first-child {
             max-width: 360px;
             gap: 30px;
@@ -149,6 +148,7 @@
       .footer__body {
         justify-content: center;
         padding: 20px 50px;
+        gap: 15px;
       }
     }
   }

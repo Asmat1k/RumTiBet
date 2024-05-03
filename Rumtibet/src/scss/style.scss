@@ -2,7 +2,7 @@
 
 //<ПЕРЕМЕННЫЕ>
 // Шрифт
-$fontFamily: 'Nunito Sans', sans-serif;
+$fontFamily: 'Nunito Sans';
 // Шрифт
 $fontSize: 18;
 // Цвет главного шрифта
@@ -26,6 +26,7 @@ $maxWidth: 1180;
 //<ШРИФТЫ>
 //<Подключаем шрифты>
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import './fonts/fonts.scss';
 //</Подключаем шрифты>
 
 //<ПОДЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>

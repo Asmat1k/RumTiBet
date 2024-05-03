@@ -7,13 +7,15 @@
       gap: 40px;
       //!TODO Пока без шрифта
       .welcome__title {
+        font-family: NEXTART_Bold;
+
         font-size: 50px;
         text-transform: uppercase;
-        letter-spacing: 1px;
         line-height: 150%;
-        font-weight: bold;
 
         text-align: left;
+
+        max-width: 1080px;
       }
       .welcome__form {
         display: flex;
