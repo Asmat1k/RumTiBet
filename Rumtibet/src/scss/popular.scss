@@ -1,0 +1,188 @@
+.popular {
+  .popular__conatiner {
+    .popular__body {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      .popular__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+      .popular__cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        max-width: 100%;
+        overflow: auto;
+        .popular__card {
+          position: relative;
+          border-radius: 35px;
+          overflow: hidden;
+
+          min-width: 380px;
+          .card__img {
+            width: 100%;
+            max-height: 500px;
+          }
+          .card__stats {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+
+            position: absolute;
+            top: 50px;
+            right: 0;
+
+            opacity: 1;
+            background-color: hsla(0, 0%, 99%, 0.4);
+            border-radius: 5px;
+            padding: 5px 10px;
+            max-width: 65px;
+
+            transition: 1s;
+            .card__star {
+              max-width: 24px;
+            }
+            .card__num {
+              font-size: 14px;
+              font-weight: bold;
+            }
+          }
+          .card__info {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 40px;
+
+            position: absolute;
+            top: 410px;
+            right: 0;
+
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(6px);
+            color: $fontColorTwo;
+
+            height: 100%;
+            padding: 10px 30px 20px 30px;
+
+            transition: 1s;
+            .card__header {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              .card__header-text {
+                .card__title {
+                  font-size: 24px;
+                  font-weight: bold;
+                  line-height: 120%;
+                }
+                .card__subtitle {
+                  font-size: 14px;
+                }
+              }
+              .card__price {
+                font-size: 20px;
+                font-weight: bold;
+                text-align: center;
+
+                background-color: hsla(0, 0%, 99%, 0.4);
+                border-radius: 5px;
+                padding: 10px 15px;
+              }
+            }
+            .card__body {
+              display: flex;
+              flex-direction: column;
+              align-items: start;
+              justify-content: center;
+              gap: 105px;
+              .card__text {
+                font-size: 16px;
+                line-height: 150%;
+                text-align: left;
+              }
+              .card__btn {
+                padding: 12px 24px;
+              }
+            }
+            &:hover {
+              top: 0;
+              padding: 30px 30px 20px 30px;
+              + .card__stats {
+                opacity: 0;
+              }
+            }
+          }
+        }
+      }
+      .popular__btn {
+        align-self: center;
+
+        width: 245px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .popular .popular__conatiner .popular__body .popular__cards {
+    .popular__card {
+      min-width: 285px;
+      .card__info {
+        gap: 20px;
+
+        top: 335px;
+        .card__header {
+          .card__header-text {
+            .card__title {
+              font-size: 18px;
+            }
+            .card__subtitle {
+              display: none;
+            }
+          }
+          .card__price {
+            font-size: 16px;
+            padding: 5px 10px;
+          }
+        }
+        .card__body {
+          gap: 40px;
+          .card__text {
+            font-size: 14px;
+          }
+        }
+        &:hover {
+          top: 0;
+          padding: 20px 25px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .popular .popular__conatiner .popular__body {
+    gap: 32px;
+    .popular__header {
+      align-items: start;
+    }
+    .popular__cards {
+      .popular__card {
+        .card__stats {
+          top: 35px;
+
+          font-size: 14px;
+        }
+      }
+    }
+    .popular__btn {
+      align-self: center;
+      width: 220px;
+    }
+  }
+}

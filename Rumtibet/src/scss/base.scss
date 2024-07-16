@@ -1,0 +1,66 @@
+// Общие стили
+html {
+  scroll-behavior: smooth;
+  background-color: $fontColorTwo;
+}
+.lock {
+  overflow: hidden;
+  touch-action: none;
+}
+.main {
+  background-color: $fontColorTwo;
+}
+
+// Главная секция
+.main__welcome-wrapper {
+  color: $fontColorTwo;
+
+  height: 100%;
+  background: url('../img/welcome.png') no-repeat center center / cover;
+
+  padding: 15px;
+  padding-bottom: 85px;
+}
+.main__welcome-body {
+  max-width: $maxWidth + px;
+  margin: 0 auto;
+}
+
+// Последующие секции
+.main__block {
+  padding: 0 0px;
+}
+.main__section {
+  max-width: $maxWidth + px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 80px 0 100px 0;
+}
+.colored {
+  background-color: $sectionColor;
+}
+
+@media (max-width: 1167px) {
+  .main__block {
+    padding: 0 15px;
+  }
+  .main__welcome-wrapper {
+    height: 100vh;
+    padding: 20px 15px;
+  }
+}
+
+@media (max-width: 1045px) {
+  .main__welcome-wrapper {
+    padding-bottom: 0;
+  }
+  .main__section {
+    padding: 53px 0;
+  }
+}
+
+@media (max-width: 390px) {
+  .main__welcome-wrapper {
+    max-height: 600px;
+  }
+}

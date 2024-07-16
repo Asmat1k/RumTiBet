@@ -1,0 +1,58 @@
+@use 'sass:math';
+
+//<ПЕРЕМЕННЫЕ>
+// Шрифт
+$fontFamily: 'Nunito Sans';
+// Шрифт
+$fontSize: 18;
+// Цвет главного шрифта
+$fontColorOne: #18121e;
+// Цвет главного шрифта
+$fontColorTwo: #fdfdfd;
+// Цвет главного шрифта
+$fontColorThree: #f3f5f4;
+// Цвет доп шрифтов и hover в футере
+$labelColor: #f2be22;
+// Цвет кнопок и футера и hover названий
+$backgroundColor: #1a3e3e;
+// Цвет секций
+$sectionColor: #f3f5f4;
+// Минимальная ширина страницы
+$minWidth: 390;
+// Ширина макета
+$maxWidth: 1180;
+//</ПЕРЕМЕННЫЕ>
+
+//<ШРИФТЫ>
+//<Подключаем шрифты>
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import './fonts/fonts.scss';
+//</Подключаем шрифты>
+
+//<ПОДЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>
+@import 'header.scss';
+@import 'welcome.scss';
+@import 'explore.scss';
+@import 'programms.scss';
+@import 'popular.scss';
+@import 'blog.scss';
+@import 'share.scss';
+@import 'news.scss';
+@import 'footer.scss';
+//</ПОДЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>
+
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>
+@import 'base/null';
+@import 'base.scss';
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>
+
+//<МИКСИНЫ>
+@import 'base/mixins';
+//</МИКСИНЫ>
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ - ФОРМ И ГОТОВЫХ КЛАССОВ>
+@import 'base';
+@import './base/button.scss';
+@import './base/heading.scss';
+@import './base/link.scss';
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ - ФОРМ И ГОТОВЫХ КЛАССОВ>

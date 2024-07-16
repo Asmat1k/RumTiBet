@@ -1,0 +1,19 @@
+.main__subtitle {
+  text-transform: lowercase;
+  font-size: 24px;
+  color: $labelColor;
+}
+.main__title {
+  font-size: 32px;
+  line-height: 120%;
+  font-weight: bolder;
+}
+
+@media (max-width: 390px) {
+  .main__subtitle {
+    font-size: 16px;
+  }
+  .main__title {
+    font-size: 24px;
+  }
+}
